@@ -1,7 +1,7 @@
 <h1 align="center">Kamus Bahasa Sentani - Website</h1>
 
 <div align="center">
-  <img src="src/assets/images/logo-kamus-bahasa-sentani.svg" alt="Logo Kamus Bahasa Sentani" width="200"/>
+  <img src="src/assets/images/logo-kamus-bahasa-sentani.png" alt="Logo Kamus Bahasa Sentani" width="200"/>
   <h3>Website Kamus Digital untuk Pelestarian Bahasa Sentani</h3>
 </div>
 
