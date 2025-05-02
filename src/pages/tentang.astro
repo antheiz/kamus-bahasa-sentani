@@ -5,14 +5,12 @@ import Link from "@/components/Link.astro";
 import {
   BookOpen,
   Code,
-  Download,
   ExternalLink,
   Github,
   Globe,
   Heart,
   Home,
   Mail,
-  Smartphone,
 } from "lucide-react";
 import {
   Card,
@@ -25,8 +23,8 @@ import { Separator } from "@/components/ui/separator";
 ---
 
 <MainLayout
-  title="Tentang | Kamus Bahasa Moy"
-  description="Informasi tentang situs Kamus Bahasa Moy dan Panduan kontribusi"
+  title="Tentang"
+  description="Informasi tentang situs Kamus Bahasa Sentani dan Panduan kontribusi"
 >
   <div class="flex flex-col max-w-screen-xl mx-auto px-4 py-6 md:px-8">
     <div class="flex items-center gap-2 mb-6">
@@ -44,10 +42,10 @@ import { Separator } from "@/components/ui/separator";
     <div class="grid gap-8 max-w-3xl mx-auto">
       <div class="text-center">
         <h1 class="text-3xl font-bold tracking-tight mb-2">
-          Tentang Kamus Bahasa Moy
+          Tentang Kamus Bahasa Sentani
         </h1>
         <p class="text-muted-foreground">
-          Proyek open source untuk melestarikan dan mempromosikan bahasa Moy
+          Proyek open source untuk melestarikan dan mempromosikan bahasa Sentani
           dari Jayapura, Papua
         </p>
       </div>
@@ -59,28 +57,29 @@ import { Separator } from "@/components/ui/separator";
             Tentang Aplikasi
           </CardTitle>
           <CardDescription
-            >Informasi tentang aplikasi Kamus Bahasa Moy</CardDescription
+            >Informasi tentang aplikasi Kamus Bahasa Sentani</CardDescription
           >
         </CardHeader>
         <CardContent className="space-y-4">
           <p>
-            Kamus Bahasa Moy adalah aplikasi yang dikembangkan untuk membantu
-            melestarikan dan mempromosikan bahasa Moy dari Jayapura, Papua.
-            Aplikasi ini menyediakan kosakata bahasa Moy beserta terjemahan,
-            pengucapan, dan contoh penggunaan dalam kalimat. Dengan antarmuka
-            yang intuitif dan fitur-fitur yang berguna, aplikasi ini memudahkan
-            pengguna untuk mempelajari dan mengapresiasi bahasa Moy.
+            Kamus Bahasa Sentani adalah aplikasi yang dikembangkan untuk
+            membantu melestarikan dan mempromosikan bahasa Sentani dari
+            Jayapura, Papua. Aplikasi ini menyediakan kosakata bahasa Sentani
+            beserta terjemahan, pengucapan, dan contoh penggunaan dalam kalimat.
+            Dengan antarmuka yang intuitif dan fitur-fitur yang berguna,
+            aplikasi ini memudahkan pengguna untuk mempelajari dan mengapresiasi
+            bahasa Sentani.
           </p>
           <p class="mt-2">
             Selain kamus, aplikasi ini juga menyediakan koleksi lirik lagu dalam
-            bahasa Moy beserta terjemahan dalam bahasa Indonesia. Fitur ini
+            bahasa Sentani beserta terjemahan dalam bahasa Indonesia. Fitur ini
             memungkinkan pengguna untuk menikmati dan memahami kekayaan budaya
             Papua melalui musik dan lagu tradisional, sekaligus belajar bahasa
-            Moy dengan cara yang lebih menyenangkan dan interaktif.
+            Sentani dengan cara yang lebih menyenangkan dan interaktif.
           </p>
           <p>
             Data kosa-kata bahasa dalam aplikasi ini diambil dari Kamus
-            Dwibahasa Mooi yang dibuat oleh Balai Bahasa Provinsi Papua,
+            Dwibahasa Sentani yang dibuat oleh Balai Bahasa Provinsi Papua,
             sehingga menjamin keakuratan dan keaslian konten bahasa yang
             disajikan.
           </p>
@@ -91,22 +90,40 @@ import { Separator } from "@/components/ui/separator";
         <CardHeader className="pb-3">
           <CardTitle className="flex items-center gap-2">
             <Code className="h-5 w-5 text-primary" />
-            Adaptasi untuk Bahasa Daerah Lain
+            Tentang Proyek
           </CardTitle>
           <CardDescription
-            >Informasi tentang penggunaan kode sumber untuk bahasa lain</CardDescription
+            >Informasi tentang latar belakang project</CardDescription
           >
         </CardHeader>
         <CardContent className="space-y-4">
           <p>
-            Kode sumber Kamus Bahasa Moy dapat Anda gunakan untuk membuat
-            aplikasi kamus untuk bahasa daerah lainnya di Indonesia atau di
-            seluruh dunia. Kami mendorong upaya pelestarian bahasa daerah
-            melalui teknologi dan dengan senang hati menyediakan codebase ini
-            sebagai dasar pengembangan aplikasi serupa.
+            Kamus Bahasa Sentani dikembangkan berdasarkan proyek dari
+            <a
+              href="https://kamusbahasamoy.web.id"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary underline">Kamus Bahasa Moy</a
+            >, sebuah inisiatif open source yang dikembangkan oleh
+            <a
+              href="https://papuaopensource.github.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary underline">Papua Open Source</a
+            >
+            untuk pelestarian bahasa-bahasa daerah di Papua.
+          </p>
+          <p>
+            Situs Kamus Bahasa Sentani ini dikembangkan oleh <a
+              href="https://antheiz.space"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary underline">Antheiz</a
+            >, seorang pengembang perangkat lunak yang berasal dari Jayapura
+            sekaligus inisiator dari komunitas Papua Open Source.
           </p>
           <p class="font-medium">
-            Dalam mengadaptasi kode sumber ini, Anda wajib:
+            Dalam menggunakan kode sumber ini, kami mematuhi ketentuan:
           </p>
           <ul class="list-disc pl-6 space-y-2">
             <li>
@@ -121,13 +138,13 @@ import { Separator } from "@/components/ui/separator";
           <div class="flex flex-col sm:flex-row gap-4 mt-4">
             <Button className="flex items-center gap-2">
               <Link
-                href="https://github.com/papua-opensource/kamus-bahasa-moy"
+                href="https://github.com/papuaopensource/kamus-bahasa-moy-website"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="flex items-center gap-1"
               >
                 <Github className="h-4 w-4" />
-                <span>Repository GitHub</span>
+                <span>Template GitHub</span>
                 <ExternalLink className="h-3 w-3 ml-1" />
               </Link>
             </Button>
@@ -148,7 +165,7 @@ import { Separator } from "@/components/ui/separator";
         <CardContent className="space-y-4">
           <p>
             Kami sangat menghargai kontribusi dari komunitas untuk meningkatkan
-            dan mengembangkan Kamus Bahasa Moy. Ada banyak cara untuk
+            dan mengembangkan Kamus Bahasa Sentani. Ada banyak cara untuk
             berkontribusi, baik Anda seorang pengembang, penerjemah, atau hanya
             pengguna yang ingin membantu.
           </p>
@@ -163,48 +180,13 @@ import { Separator } from "@/components/ui/separator";
           <div class="flex flex-col sm:flex-row gap-4 mt-4">
             <Button className="flex items-center gap-2" variant="default">
               <Link
-                href="https://github.com/papua-opensource/kamus-bahasa-moy-website/blob/main/CONTRIBUTING.md"
+                href="https://github.com/antheiz/kamus-bahasa-sentani-website/blob/main/CONTRIBUTING.md"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="flex items-center gap-1"
               >
                 <Github className="h-4 w-4" />
                 <span>Panduan Kontribusi</span>
-                <ExternalLink className="h-3 w-3 ml-1" />
-              </Link>
-            </Button>
-          </div>
-        </CardContent>
-      </Card>
-
-      <Card className="shadow-none">
-        <CardHeader className="pb-3">
-          <CardTitle className="flex items-center gap-2">
-            <Smartphone className="h-5 w-5 text-primary" />
-            Aplikasi Mobile
-          </CardTitle>
-          <CardDescription
-            >Download aplikasi Kamus Bahasa Moy di perangkat mobile Anda</CardDescription
-          >
-        </CardHeader>
-        <CardContent className="space-y-4">
-          <p>
-            Kamus Bahasa Moy juga tersedia dalam versi aplikasi mobile yang
-            dapat Anda download di Google Play Store. Nikmati semua fitur kamus,
-            termasuk pencarian offline, pengucapan, dan lirik lagu, langsung
-            dari smartphone Anda.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4 mt-4">
-            <Button className="flex items-center gap-2">
-              <Link
-                href="https://play.google.com/store/apps/details?id=org.papuaopensource.kamus_bahasa_moy"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex items-center gap-1"
-                aria-disabled="true"
-              >
-                <Download className="h-4 w-4" />
-                <span>Download di Play Store</span>
                 <ExternalLink className="h-3 w-3 ml-1" />
               </Link>
             </Button>
@@ -231,9 +213,9 @@ import { Separator } from "@/components/ui/separator";
             dan bahasa daerah.
           </p>
           <p>
-            Melalui proyek-proyek seperti Kamus Bahasa Moy, kami berupaya untuk
-            mendokumentasikan dan mempromosikan kekayaan budaya Papua dalam
-            format digital yang mudah diakses oleh generasi muda.
+            Melalui proyek-proyek seperti template Kamus Bahasa Daerah, mereka
+            berupaya untuk mendokumentasikan dan mempromosikan kekayaan budaya
+            Papua dalam format digital yang mudah diakses oleh generasi muda.
           </p>
           <Separator className="my-4" />
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
