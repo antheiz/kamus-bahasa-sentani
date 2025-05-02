@@ -2,108 +2,84 @@
   "songs": [
     {
       "id": 1,
-      "title": "Aiwary Kame Tamlak Daleye",
-      "artist": null,
-      "composer": null,
-      "audioUrl": null,
-      "description": "Lagu rohani yang menyatakan pengharapan dan kasih kepada Yesus",
-      "lyrics": [
-        {
-          "type": "verse",
-          "content": [
-            "Aiwary kame tamlak daleye",
-            "Jeh dunia ne",
-            "Dunia karang wabu mase"
-          ]
-        },
-        {
-          "type": "chorus",
-          "content": [
-            "Oh.. a.. Yesus",
-            "Kameng nmbut pu yamtru",
-            "Nje wary yap ma sri"
-          ]
-        },
-        {
-          "type": "verse",
-          "content": [
-            "Kmong kama alei ngakbalei kameng",
-            "Nmbut tup de"
-          ]
-        }
-      ],
-      "translation": null
-    },
-    {
-      "id": 2,
-      "title": "Oh Yerusalem Wary ksop",
-      "artist": null,
-      "composer": null,
-      "audioUrl": null,
+      "title": "Anna",
+      "composer": "Frietz Mansawan",
       "description": "Lagu rohani yang menggambarkan keindahan dan harapan dalam Yerusalem",
       "lyrics": [
         {
           "type": "verse",
           "content": [
-            "Oh yerusalem wali wali ksop",
-            "Kandei dambu ngonesye"
+            "Anna Rare Honggarea",
+            "Anna rare Holewarea",
+            "Romiyeare isebhonde",
+            "rare....Mokhowarea",
+            "Anna Wa Foi Khabangsele"
           ]
         },
-        {
-          "type": "chorus",
-          "content": [
-            "Warangkbadari Aiwary pungarang",
-            "Met nengrei-nengrei katdangse"
-          ]
-        }
-      ],
-      "translation": [
         {
           "type": "verse",
           "content": [
-            "Oh Yerusalem kota mulia",
-            "Hatiku rindu ke sana"
+            "Iyjea phuheseyea khowarea",
+            "na foi-moi helle Mhokhowarea",
+            "khena phuhea hewarea",
+            "rabho halewoyea",
+            "Romiyeare ereyembondere"
           ]
         },
         {
           "type": "chorus",
           "content": [
-            "Tak lama lagi Tuhanku datanglah",
-            "Bawa saya masuk sana"
+            "Phurayaufa oroyeyea",
+            "wa menemo ikheayarea",
+            "wa phuhea khokhounge aibhoyarea",
+            "anna oh anna"
+          ]
+        },
+        {
+          "type": "verse",
+          "content": [
+            "Nahele khoro nakhe miyea",
+            "na foi-moi mokhoyaime",
+            "nekhmayende pekho eimokohoijea"
           ]
         }
       ]
     },
     {
-      "id": 3,
-      "title": "Yesus Ngut Beibi Song Daytong",
-      "artist": null,
-      "composer": null,
-      "audioUrl": null,
+      "id": 2,
+      "title": "Foi Moi Sele",
+      "composer": "Pieter Pallo",
       "description": "Lagu rohani yang memuji kebesaran Yesus dan cinta-Nya kepada umat manusia",
       "lyrics": [
         {
           "type": "verse",
           "content": [
-            "Yesus ngut beibi song daytong",
-            "Met nje syolinak seh",
-            "Nande syoli kambung dunak mranupdang",
-            "Nje solinak pegu mamsong pegu arai katdamse",
-            "Ngo tangse mengwalitab kindik daitung"
+            "Foi moi sele Tuhan ware wayete",
+            "Onomi fokha mei waline yeyama",
+            "Nebeinye Tuhan Mea",
+            "Ware bhuma kholayete",
+            "Mei Wali einye Tuhan Nekhewende"
+          ]
+        },
+        {
+          "type": "verse",
+          "content": [
+            "Mei Khena u wei einyemo nekhemande",
+            "Mei Hole einye khukuimeme nekhemande",
+            "Bulo fela hugalo uhele nekhemande",
+            "Mei wali einye Tuhan Nekhewende"
           ]
         },
         {
           "type": "chorus",
           "content": [
-            "Oh Yesus ma Oh Yesus ma",
-            "Kmong krum kemsingsong",
-            "kmong krung dmo bu arung tase",
-            "Pi kumtrung syolinak brone",
-            "Syolinak syolinak dunya paine"
+            "Tuhan ei rime a waremo",
+            "Tuhan wembaisele mei rabo",
+            "Wei einyemo meya nekhemande",
+            "benenfonde mele"
           ]
         }
-      ],
-      "translation": null
+      ]
     }
   ]
 }
