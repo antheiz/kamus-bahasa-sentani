@@ -361,7 +361,7 @@ export default function KamusApp() {
                 <Textarea
                   ref={inputRef}
                   placeholder="Masukan teks"
-                  className="min-h-[200px] resize-none p-4 rounded-md border focus-visible:ring-1 focus-visible:ring-primary"
+                  className="bg-white min-h-[200px] resize-none p-4 rounded-md border focus-visible:ring-1 focus-visible:ring-primary"
                   value={inputText}
                   onChange={(e) => {
                     setInputText(e.target.value)
@@ -408,7 +408,7 @@ export default function KamusApp() {
               </div>
 
               {/* Output area */}
-              <div className="relative min-h-[200px] bg-muted/30 rounded-md p-4">
+              <div className="relative min-h-[200px] bg-muted/100 rounded-md p-4">
                 {translatedText ? (
                   <div>
                     <p className="text-lg">{translatedText}</p>
