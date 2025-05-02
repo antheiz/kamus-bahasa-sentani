@@ -408,7 +408,7 @@ export default function KamusApp() {
               </div>
 
               {/* Output area */}
-              <div className="relative min-h-[200px] bg-slate-200/35 rounded-md p-4">
+              <div className="relative min-h-[200px] bg-muted rounded-md p-4">
                 {translatedText ? (
                   <div>
                     <p className="text-lg">{translatedText}</p>
