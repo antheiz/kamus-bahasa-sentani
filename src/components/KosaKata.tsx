@@ -149,7 +149,7 @@ export default function KosaKataPage() {
           <div>
             <h1 className="text-3xl font-bold tracking-tight">Kosa Kata</h1>
             <p className="text-muted-foreground">
-              Jelajahi kosa kata bahasa Indonesia dan terjemahannya dalam bahasa Moy
+              Jelajahi kosa kata bahasa Indonesia dan terjemahannya dalam bahasa Sentani
             </p>
           </div>
 

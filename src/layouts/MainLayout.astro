@@ -20,10 +20,10 @@ const { title, description } = Astro.props as Props;
     <BaseHead title={title} description={description} />
   </head>
 
-  <body>
+  <body class="min-h-screen">
     <Header pathname={pathname} />
     <main
-      class="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900"
+      class="bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900"
     >
       <slot />
     </main>

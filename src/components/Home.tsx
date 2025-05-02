@@ -222,24 +222,6 @@ export default function KamusApp() {
     setRelatedWords([])
   }
 
-  // Function to handle feedback submission
-  const handleFeedbackSubmit = () => {
-    if (feedbackText.trim()) {
-      toast({
-        title: "Terima kasih atas saran Anda!",
-        description: "Saran Anda telah dikirim dan akan kami tinjau.",
-      })
-      setFeedbackText("")
-      setFeedbackDialogOpen(false)
-    } else {
-      toast({
-        title: "Saran kosong",
-        description: "Silakan masukkan saran Anda",
-        variant: "destructive",
-      })
-    }
-  }
-
   // Function to speak text using browser's speech synthesis
   const speakText = (text: string) => {
     if ("speechSynthesis" in window) {
@@ -551,42 +533,7 @@ export default function KamusApp() {
                   </Button>
                 </div>
               </div>
-            )}
-
-            <div className="flex justify-end">
-              <Dialog open={feedbackDialogOpen} onOpenChange={setFeedbackDialogOpen}>
-                <DialogTrigger asChild>
-                  <Button variant="link" size="sm" className="text-muted-foreground">
-                    Kirim masukan
-                  </Button>
-                </DialogTrigger>
-                <DialogContent className="sm:max-w-[425px]">
-                  <DialogHeader>
-                    <DialogTitle>Kirim Masukan</DialogTitle>
-                    <DialogDescription>
-                      Bantu kami meningkatkan kualitas terjemahan dengan memberikan saran atau koreksi.
-                    </DialogDescription>
-                  </DialogHeader>
-                  <div className="grid gap-4 py-4">
-                    <div className="grid gap-2">
-                      <Label htmlFor="feedback">Masukan Anda</Label>
-                      <Textarea
-                        id="feedback"
-                        placeholder="Tulis masukan Anda di sini..."
-                        value={feedbackText}
-                        onChange={(e) => setFeedbackText(e.target.value)}
-                        className="min-h-[120px]"
-                      />
-                    </div>
-                  </div>
-                  <DialogFooter>
-                    <Button type="submit" onClick={handleFeedbackSubmit}>
-                      Kirim
-                    </Button>
-                  </DialogFooter>
-                </DialogContent>
-              </Dialog>
-            </div>
+            )}            
           </div>
         </div>
 
