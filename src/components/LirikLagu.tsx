@@ -37,7 +37,7 @@ export default function LirikLaguPage() {
   const audioRef = useRef<HTMLAudioElement | null>(null)
   const [dialogOpen, setDialogOpen] = useState(false)
 
-  // Get unique artists for filter
+  // Get unique song writer for filter
   const uniqueComposers = useMemo(() => {
     const composers = songsData.songs
       .map((song) => song.composer)
@@ -46,17 +46,16 @@ export default function LirikLaguPage() {
     return composers.sort()
   }, [])
 
-  // Filter songs based on search and artist
+  // Filter songs based on search and songwriter
   const filteredSongs = useMemo(() => {
     return songsData.songs.filter((song) => {
       const matchesSearch =
         searchQuery === "" ||
         song.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        (song.artist && song.artist.toLowerCase().includes(searchQuery.toLowerCase())) ||
         (song.composer && song.composer.toLowerCase().includes(searchQuery.toLowerCase())) ||
         song.description.toLowerCase().includes(searchQuery.toLowerCase())
 
-      // Special handling for "unknown" artist filter
+      // Special handling for "unknown" songwriter filter
       const matchesComposer =
         !selectedComposer || (selectedComposer === "unknown" && !song.composer) || song.composer === selectedComposer
 
