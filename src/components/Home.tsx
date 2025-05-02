@@ -526,7 +526,7 @@ export default function KamusApp() {
                     )
                   })}
                   <Button variant="outline" size="sm" className="flex items-center gap-1 rounded-full" asChild>
-                    <a href="/kosa-kata">
+                    <a href="/kosa-kata/">
                       <span>Lihat semua kata</span>
                       <ExternalLink className="h-3 w-3 ml-1" />
                     </a>
