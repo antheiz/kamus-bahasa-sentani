@@ -344,7 +344,7 @@ export default function KamusApp() {
                 </div>
               </div>
 
-              <Button variant="ghost" size="icon" onClick={swapLanguages} className="mx-2">
+              <Button variant="ghost" size="icon" onClick={swapLanguages} className="mx-2 cursor-pointer">
                 <ArrowLeftRight className="h-5 w-5" />
               </Button>
 
