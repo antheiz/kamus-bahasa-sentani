@@ -358,7 +358,7 @@ export default function KamusApp() {
             <div className="flex items-center justify-between">
               <div className="flex-1 flex justify-start">
                 <div className="px-4 py-2 font-medium border-b-2 border-primary text-primary">
-                  {isReversed ? "Moy" : "Indonesia"}
+                  {isReversed ? "Sentani" : "Indonesia"}
                 </div>
               </div>
 
@@ -368,7 +368,7 @@ export default function KamusApp() {
 
               <div className="flex-1 flex justify-start">
                 <div className="px-4 py-2 font-medium border-b-2 border-primary text-primary">
-                  {isReversed ? "Indonesia" : "Moy"}
+                  {isReversed ? "Indonesia" : "Sentani"}
                 </div>
               </div>
             </div>

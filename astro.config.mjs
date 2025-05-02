@@ -8,7 +8,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://kamusbahasamoy.web.id",
+  site: "https://kamusbahasasentani.web.id",
   trailingSlash: "always",
   vite: {
     plugins: [tailwindcss()]
